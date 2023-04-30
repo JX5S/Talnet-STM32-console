@@ -1,5 +1,5 @@
-## Talnet-STM32-console
-# Objednávání - plošné spoje
+# Talnet-STM32-console
+## Objednávání - plošné spoje
 1. Otevřít https://jlcpcb.com/
 2. "Add gerber file" a vybrat "GerberA.zip"
 3. Změnit "Surface finish" na "LeadFree HASL", pokud nechceme olovo
@@ -8,7 +8,7 @@
 
 6. Opakovat s "GerberB.zip" a objednat
 
-# Objednávání - komponenty z LCSC
+## Objednávání - komponenty z LCSC
 1. Otevřít https://lcsc.com/
 2. "BOM Tool"
 3. Nahrát "LCSC_komponenty.csv"
@@ -20,9 +20,13 @@
 8. Pokud něco už není na skladě, je potřeba vybrat náhradní součástky. Většinu součástek by šlo nahradit jednodušše. Dne 30.4.2023 bylo na skladě vše, ale zásoba mikrokontroléru už se krátila - měl by jít nahradit rychlejším, ale dražším STM32F446RET6, bez úpravy desky.
 9. Objednat. Pokud první objednáme z JLCPCB, získáme slevu na poštovné
 
-# Objednávání - díly z Aliexpressu
+## Objednávání - díly z Aliexpressu
+Nabíjecí obvod: https://www.aliexpress.com/item/1005001580997981.html
+Displej: https://www.aliexpress.com/item/32843115817.html
+BMI160: https://www.aliexpress.com/item/32718555571.html
+USB-C: https://www.aliexpress.com/item/1005004598158601.html
 
-# Nastavení programovacího prostředí
+## Nastavení programovacího prostředí
 1. Stáhneme, nainstalujeme a otevřeme Visual Studio Code
 2. V sekci "Extensions" nainstalujeme rozšíření PlatformIO
 3. Počkáme na dokončení instalace PlatformIO. Trvá to několik minut
