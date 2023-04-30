@@ -22,8 +22,11 @@
 
 ## Objednávání - díly z Aliexpressu
 Nabíjecí obvod: https://www.aliexpress.com/item/1005001580997981.html
+
 Displej: https://www.aliexpress.com/item/32843115817.html
+
 BMI160: https://www.aliexpress.com/item/32718555571.html
+
 USB-C: https://www.aliexpress.com/item/1005004598158601.html
 
 ## Nastavení programovacího prostředí
