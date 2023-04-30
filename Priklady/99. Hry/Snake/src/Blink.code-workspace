@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../Talnet console/Blink"
+		},
+		{
+			"name": "Blink",
+			"path": "../../Blink"
+		},
+		{
+			"name": "Snake",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"deque": "cpp",
+			"type_traits": "cpp",
+			"unordered_map": "cpp",
+			"xmemory": "cpp"
+		}
+	}
+}
