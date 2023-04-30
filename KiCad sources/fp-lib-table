@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Talnet console")(type "KiCad")(uri "${KIPRJMOD}/Talnet console.pretty")(options "")(descr ""))
+  (lib (name "Components libraries")(type "KiCad")(uri "${KIPRJMOD}/Components libraries")(options "")(descr ""))
+  (lib (name "M2nutV2")(type "KiCad")(uri "${KIPRJMOD}/Components libraries/M2nutV2.pretty")(options "")(descr ""))
+)
