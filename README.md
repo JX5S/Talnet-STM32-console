@@ -24,7 +24,7 @@ Výuková konzole pro vyučování porgramování v C/C++. Uvnitř je STM32F412R
 6. "Next" pro pokračování
 7. Zkontrolovat, že je vše na skladě, a kliknout "Add to cart" pro přidání do košíku
 
-8. Pokud něco už není na skladě, je potřeba vybrat náhradní součástky. Většinu součástek by šlo nahradit jednodušše. Dne 30.4.2023 bylo na skladě vše, ale zásoba mikrokontroléru už se krátila - měl by jít nahradit rychlejším, ale dražším STM32F446RET6, bez úpravy desky.
+8. Pokud něco už není na skladě, je potřeba vybrat náhradní součástky. Většinu součástek by šlo nahradit jednoduše. Dne 30.4.2023 bylo na skladě vše, ale zásoba mikrokontroléru už se krátila - měl by jít nahradit rychlejším, ale dražším STM32F446RET6, bez úpravy desky.
 9. Objednat. Pokud první objednáme z JLCPCB, získáme slevu na poštovné
 
 ## Objednávání - díly z Aliexpressu
