@@ -1,4 +1,11 @@
-# Talnet-STM32-console
+# Talnet STM32 console
+Výuková konzole pro vyučování porgramování v C/C++. Uvnitř je STM32F412RET6 mikroprocesor, barevný LCD displej, inerční jednotka BMI160, pípák, tlačítka a joystick.
+
+![Fotografie výsledné konzole](https://github.com/JX5S/Talnet-STM32-console/blob/main/Media/P5062055.JPG "Konzole s vytištěnými díly")
+
+![Elektronika konzole](https://github.com/JX5S/Talnet-STM32-console/blob/main/Media/P5062066.JPG "Elektronika konzole")
+
+
 ## Objednávání - plošné spoje
 1. Otevřít https://jlcpcb.com/
 2. "Add gerber file" a vybrat "GerberA.zip"
