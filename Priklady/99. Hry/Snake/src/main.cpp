@@ -1,13 +1,3 @@
-/*
- * Pong
- * Original Code from https://github.com/rparrett/pongclock
- *
- */
-
-#define BLACK 0x0000
-#define WHITE 0xFFFF
-#define GREY  0x5AEB
-
 #include <TFT_eSPI.h> // Graphics and font library for ST7735 driver chip
 #include <SPI.h>
 #include "console.h"
