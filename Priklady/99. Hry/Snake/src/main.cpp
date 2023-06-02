@@ -1,9 +1,9 @@
-#include <TFT_eSPI.h> // Graphics and font library for ST7735 driver chip
+#include <TFT_eSPI.h>
 #include <SPI.h>
 #include "console.h"
 #include "graphics.h"
 
-TFT_eSPI tft = TFT_eSPI();  // Invoke library, pins defined in User_Setup.h
+TFT_eSPI tft = TFT_eSPI();
 TFT_eSprite frame_buffer = TFT_eSprite(&tft);
 
 void upbtn();
@@ -13,26 +13,22 @@ void rightbtn();
 void end();
 
 void setup(void) {
-  pinMode(PB0, OUTPUT);
+  pinMode(PB0, OUTPUT); // pro debug - je to ploška uvnitř konzole, není zvenku dostupná
   pinMode(PB3, OUTPUT);
-  analogWrite(Console_TFT_BLK, 200);
+  analogWrite(Console_TFT_BLK, 255);
 
   pinMode(Console_BTN_Up, INPUT);
   pinMode(Console_BTN_Down, INPUT);
   pinMode(Console_BTN_Left, INPUT);
   pinMode(Console_BTN_Right, INPUT);
-
+  
   attachInterrupt(Console_BTN_Up, upbtn, FALLING);
   attachInterrupt(Console_BTN_Down, downbtn, FALLING);
   attachInterrupt(Console_BTN_Left, leftbtn, FALLING);
   attachInterrupt(Console_BTN_Right, rightbtn, FALLING);
 
-  randomSeed(analogRead(0)*analogRead(1));
-   
   tft.init();
-
   tft.setRotation(3);
-
   tft.fillScreen(BLACK);
 
   frame_buffer.createSprite(160, 128);
@@ -59,7 +55,6 @@ uint8_t body_pic[200] = {1, 0 }; // 0 apple, 1-4 head, 5-8 tail, 9-10 straight, 
 static const unsigned short* graphics[21] = {apple, Head0, Head1, Head2, Head3, Tail0, Tail1, Tail2, Tail3, Straight0, Straight1, Straight_apple0, Straight_apple1, Bent01, Bent12, Bent23, Bent03, Bent_apple01, Bent_apple12, Bent_apple23, Bent_apple03};
 
 void loop() {
-
   // evaluate buttons
   if(digitalRead(Console_BTN_Up)+digitalRead(Console_BTN_Down)+digitalRead(Console_BTN_Left)+digitalRead(Console_BTN_Right) == 3){
     if (!digitalRead(Console_BTN_Up) && cur_snak_dir != 2) snak_dir = 0;
@@ -177,6 +172,7 @@ void end(){
   while(true);
 }
 
+// interrupts should be as short as possible
 void upbtn(){
   if(cur_snak_dir != 2) snak_dir = 0;
 }
